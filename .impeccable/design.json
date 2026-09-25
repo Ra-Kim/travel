@@ -1,0 +1,583 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-25T09:30:00Z",
+  "title": "Design System: my travel journal.",
+  "extensions": {
+    "colorMeta": {
+      "airmail-red": {
+        "role": "primary",
+        "displayName": "Airmail Red",
+        "canonical": "#d6392f",
+        "oklch": "oklch(58.2% 0.195 28.4)",
+        "purpose": "The one accent: Flip button, chevron stripe, map pin, wordmark globe, selection.",
+        "tonalRamp": [
+          "#230000",
+          "#510000",
+          "#840000",
+          "#b60e0f",
+          "#df4237",
+          "#ff6c5c",
+          "#ffafa2",
+          "#ffe6e1"
+        ]
+      },
+      "airmail-red-night": {
+        "role": "primary",
+        "displayName": "Night Airmail Red",
+        "canonical": "#ef5b4f",
+        "oklch": "oklch(66.3% 0.185 27.8)",
+        "purpose": "Accent tuned for the night table; carries navy button text.",
+        "tonalRamp": [
+          "#220000",
+          "#510000",
+          "#840000",
+          "#b21c1a",
+          "#db483e",
+          "#ff6e61",
+          "#ffafa3",
+          "#ffe6e2"
+        ]
+      },
+      "airmail-blue": {
+        "role": "secondary",
+        "displayName": "Airmail Blue",
+        "canonical": "#2346a0",
+        "oklch": "oklch(42.5% 0.152 264.6)",
+        "purpose": "Blue chevron stripe and the Maps link on card backs.",
+        "tonalRamp": [
+          "#01003d",
+          "#02136d",
+          "#173891",
+          "#355ab6",
+          "#547ddd",
+          "#75a1ff",
+          "#acc9ff",
+          "#e4efff"
+        ]
+      },
+      "marigold": {
+        "role": "tertiary",
+        "displayName": "Marigold",
+        "canonical": "#f2a541",
+        "oklch": "oklch(78.0% 0.144 69.4)",
+        "purpose": "Focus ring, greeting-letter fallback fill, the sun in the scenes.",
+        "tonalRamp": [
+          "#180600",
+          "#3a1d00",
+          "#613700",
+          "#8b5200",
+          "#b86f00",
+          "#de9229",
+          "#ffb755",
+          "#ffe6b9"
+        ]
+      },
+      "vermilion": {
+        "role": "tertiary",
+        "displayName": "Vermilion Ink",
+        "canonical": "#e2522f",
+        "oklch": "oklch(62.8% 0.186 34.8)",
+        "purpose": "Scene ink and stamp field (Japan).",
+        "tonalRamp": [
+          "#210000",
+          "#510000",
+          "#840000",
+          "#b22000",
+          "#db4b28",
+          "#ff714e",
+          "#ffb09b",
+          "#ffe5dc"
+        ]
+      },
+      "postal-blue": {
+        "role": "tertiary",
+        "displayName": "Postal Blue Ink",
+        "canonical": "#2b54b8",
+        "oklch": "oklch(47.7% 0.165 264.2)",
+        "purpose": "Scene ink and stamp field (Australia).",
+        "tonalRamp": [
+          "#01003c",
+          "#000d73",
+          "#123698",
+          "#2f59bd",
+          "#4f7ce4",
+          "#73a1ff",
+          "#acc9ff",
+          "#e3efff"
+        ]
+      },
+      "jade": {
+        "role": "tertiary",
+        "displayName": "Jade Ink",
+        "canonical": "#1a7a68",
+        "oklch": "oklch(52.2% 0.090 176.6)",
+        "purpose": "Scene ink and stamp field (Nigeria, pool).",
+        "tonalRamp": [
+          "#00100b",
+          "#002e24",
+          "#004f41",
+          "#087160",
+          "#3b9481",
+          "#61b8a4",
+          "#86ddc8",
+          "#acffed"
+        ]
+      },
+      "table": {
+        "role": "neutral",
+        "displayName": "Airmail Table",
+        "canonical": "#24479f",
+        "oklch": "oklch(42.7% 0.149 264.5)",
+        "purpose": "Day table, top of the body gradient; light theme-color.",
+        "tonalRamp": [
+          "#01003c",
+          "#02146b",
+          "#18398f",
+          "#355bb5",
+          "#557edb",
+          "#76a2ff",
+          "#acc9ff",
+          "#e3efff"
+        ]
+      },
+      "table-deep": {
+        "role": "neutral",
+        "displayName": "Airmail Table Deep",
+        "canonical": "#1a3786",
+        "oklch": "oklch(36.8% 0.137 265.0)",
+        "purpose": "Day table, bottom of the body gradient.",
+        "tonalRamp": [
+          "#01003b",
+          "#041866",
+          "#1d3a89",
+          "#3a5cae",
+          "#597ed4",
+          "#7ba2fb",
+          "#acc9ff",
+          "#e4efff"
+        ]
+      },
+      "table-night": {
+        "role": "neutral",
+        "displayName": "Night Table",
+        "canonical": "#111f40",
+        "oklch": "oklch(24.7% 0.066 264.8)",
+        "purpose": "Dark-scheme table and dark theme-color; night button text.",
+        "tonalRamp": [
+          "#010726",
+          "#152345",
+          "#314165",
+          "#4f6187",
+          "#6f82aa",
+          "#91a5cf",
+          "#b4c9f5",
+          "#e4efff"
+        ]
+      },
+      "table-night-deep": {
+        "role": "neutral",
+        "displayName": "Night Table Deep",
+        "canonical": "#0c1731",
+        "oklch": "oklch(21.1% 0.054 264.9)",
+        "purpose": "Dark-scheme table gradient foot.",
+        "tonalRamp": [
+          "#030921",
+          "#18243f",
+          "#34415f",
+          "#526180",
+          "#7382a3",
+          "#95a5c8",
+          "#b8c9ed",
+          "#e3efff"
+        ]
+      },
+      "table-ink": {
+        "role": "neutral",
+        "displayName": "Table Ink",
+        "canonical": "#f3f5fb",
+        "oklch": "oklch(97.0% 0.008 271.3)",
+        "purpose": "Headings and captions on the day table.",
+        "tonalRamp": [
+          "#0a0b0f",
+          "#232529",
+          "#404247",
+          "#5f6166",
+          "#808287",
+          "#a3a5aa",
+          "#c7c9cf",
+          "#eceef4"
+        ]
+      },
+      "table-ink-soft": {
+        "role": "neutral",
+        "displayName": "Table Ink Soft",
+        "canonical": "#d3dcf2",
+        "oklch": "oklch(89.4% 0.032 268.0)",
+        "purpose": "Intro line, trip dates, footer note on the day table.",
+        "tonalRamp": [
+          "#060a18",
+          "#1e2535",
+          "#3b4253",
+          "#596174",
+          "#7a8296",
+          "#9ca5ba",
+          "#c0c9df",
+          "#e5eeff"
+        ]
+      },
+      "table-ink-night": {
+        "role": "neutral",
+        "displayName": "Night Table Ink",
+        "canonical": "#eef1f8",
+        "oklch": "oklch(95.8% 0.010 267.4)",
+        "purpose": "Headings and captions on the night table.",
+        "tonalRamp": [
+          "#090b0f",
+          "#23252a",
+          "#404247",
+          "#5f6167",
+          "#808288",
+          "#a2a5ab",
+          "#c6c9d0",
+          "#ebeef5"
+        ]
+      },
+      "table-ink-soft-night": {
+        "role": "neutral",
+        "displayName": "Night Table Ink Soft",
+        "canonical": "#c3cde4",
+        "oklch": "oklch(84.8% 0.034 266.9)",
+        "purpose": "Secondary text on the night table.",
+        "tonalRamp": [
+          "#050a19",
+          "#1e2536",
+          "#3a4254",
+          "#586175",
+          "#798297",
+          "#9ba5bb",
+          "#bfc9e0",
+          "#e4eeff"
+        ]
+      },
+      "card-stock": {
+        "role": "neutral",
+        "displayName": "Card Stock",
+        "canonical": "#f4f5f0",
+        "oklch": "oklch(96.8% 0.007 115.7)",
+        "purpose": "Both postcard faces and the front mat.",
+        "tonalRamp": [
+          "#0b0c08",
+          "#252522",
+          "#42423e",
+          "#61625d",
+          "#82837e",
+          "#a5a6a1",
+          "#c9cac5",
+          "#eeefea"
+        ]
+      },
+      "card-ink": {
+        "role": "neutral",
+        "displayName": "Card Ink",
+        "canonical": "#1b2233",
+        "oklch": "oklch(25.4% 0.034 266.8)",
+        "purpose": "Handwriting, postmark, letter extrusion.",
+        "tonalRamp": [
+          "#050a19",
+          "#1d2536",
+          "#3a4254",
+          "#586175",
+          "#798297",
+          "#9ba5bb",
+          "#bfc9e0",
+          "#e4efff"
+        ]
+      },
+      "card-ink-soft": {
+        "role": "neutral",
+        "displayName": "Card Ink Soft",
+        "canonical": "#4a5268",
+        "oklch": "oklch(44.0% 0.038 269.2)",
+        "purpose": "The printed POST CARD label.",
+        "tonalRamp": [
+          "#060a1b",
+          "#1e2438",
+          "#3a4156",
+          "#586177",
+          "#79829a",
+          "#9ba5be",
+          "#bfc9e3",
+          "#e5eeff"
+        ]
+      },
+      "card-rule": {
+        "role": "neutral",
+        "displayName": "Card Rule",
+        "canonical": "#c9cedb",
+        "oklch": "oklch(85.1% 0.019 269.1)",
+        "purpose": "Address rules and the back divider.",
+        "tonalRamp": [
+          "#080b13",
+          "#21252e",
+          "#3e424c",
+          "#5d616c",
+          "#7e828e",
+          "#a0a5b1",
+          "#c4c9d6",
+          "#e9eefc"
+        ]
+      },
+      "accent-ink": {
+        "role": "neutral",
+        "displayName": "Accent Ink",
+        "canonical": "#ffffff",
+        "oklch": "oklch(100.0% 0.000 89.9)",
+        "purpose": "White text on the day accent and on stamp fields.",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The one intro line on the table (Bungee), max 16ch, balanced."
+      },
+      "greeting": {
+        "displayName": "Greeting Letters",
+        "purpose": "Large-letter postcard fronts: scene-filled face, white outline, card-ink extrusion; size computed per word in Card.js."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Footer sign-off in Bungee."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Place name in each caption; 2rem from 1024px."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Intro text (52ch), trip meta with tabular numerals, footer note."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Only the printed POST CARD heading on a card back; uppercase."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Flip button and Maps link."
+      },
+      "hand": {
+        "displayName": "Hand",
+        "purpose": "The handwritten message (rotated -1deg); address lines at max(1.25rem, 3.4cqi)."
+      },
+      "hand-script": {
+        "displayName": "Greeting Script",
+        "purpose": "The 'Greetings from' line on fronts, rotated -4deg."
+      }
+    },
+    "shadows": [
+      {
+        "name": "card-drop",
+        "value": "0 22px 44px -18px rgba(8, 18, 48, 0.7), 0 4px 12px -4px rgba(8, 18, 48, 0.45)",
+        "purpose": "The only box shadow: every postcard face on the day table."
+      },
+      {
+        "name": "card-drop-night",
+        "value": "0 22px 46px -18px rgba(0, 0, 0, 0.75), 0 4px 12px -4px rgba(0, 0, 0, 0.5)",
+        "purpose": "Postcard faces on the night table."
+      },
+      {
+        "name": "letter-extrusion",
+        "value": "0.015em 0.015em 0 #1b2233, 0.03em 0.03em 0 #1b2233, 0.045em 0.045em 0 #1b2233, 0.06em 0.06em 0 #1b2233, 0.075em 0.075em 0 #1b2233",
+        "purpose": "text-shadow for the extruded side of the greeting letters only (with a 0.07em card-ink stroke)."
+      }
+    ],
+    "textures": [
+      {
+        "name": "paper-grain",
+        "value": "feTurbulence fractalNoise baseFrequency .85, 2 octaves, 180px tile, mix-blend-mode multiply, opacity 0.55",
+        "purpose": "Card-stock tooth over both postcard faces."
+      },
+      {
+        "name": "airmail-chevron",
+        "value": "repeating-linear-gradient(-45deg, airmail-red 0 14px, card-stock 14px 20px, airmail-blue 20px 34px, card-stock 34px 40px), masked to a 1.4cqi frame",
+        "purpose": "Edge of every card back."
+      },
+      {
+        "name": "stamp-perforation",
+        "value": "radial-gradient(circle, transparent 3px, #000 3.5px) -5px -5px / 10px 10px round mask, plus inner frame at 7px inset",
+        "purpose": "Perforated stamp silhouette."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "All card and button motion."
+      },
+      {
+        "name": "flip",
+        "value": "transform 800ms ease-out; rotateY(180deg); perspective 1800px",
+        "purpose": "The signature card flip."
+      },
+      {
+        "name": "settle",
+        "value": "transform 500ms ease-out; rotate(var(--tilt)) to rotate(0) translateY(-4px)",
+        "purpose": "Card straightens and lifts on hover (hover-capable devices only)."
+      },
+      {
+        "name": "press",
+        "value": "transform, filter 160ms ease-out; brightness(1.08) hover, translateY(1px) scale(0.98) active",
+        "purpose": "Flip button feedback."
+      },
+      {
+        "name": "icon-turn",
+        "value": "transform 600ms ease-out; rotate(180deg) when aria-pressed",
+        "purpose": "Flip button icon."
+      },
+      {
+        "name": "crossfade",
+        "value": "opacity 200ms linear",
+        "purpose": "Reduced-motion replacement for the flip; tilt holds, no rotation."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "phone",
+        "value": "max-width: 600px",
+        "purpose": "Portrait 5:6 cards, single-column back, art focal point."
+      },
+      {
+        "name": "tablet",
+        "value": "min-width: 768px",
+        "purpose": "40px gutters, 88px trip gap."
+      },
+      {
+        "name": "wide",
+        "value": "min-width: 1024px",
+        "purpose": "64% cards overlapping by 88px, captions beside the card."
+      }
+    ],
+    "tilts": {
+      "odd": "-1.6deg",
+      "even": "1.3deg",
+      "wide-3": "-2.4deg",
+      "wide-4": "2deg",
+      "stamp": "3deg",
+      "postmark": "-12deg",
+      "message": "-1deg",
+      "script": "-4deg"
+    }
+  },
+  "components": [
+    {
+      "name": "Flip Button",
+      "kind": "button",
+      "refersTo": "button-flip",
+      "description": "The one control per card; aria-pressed toggles the postcard flip.",
+      "html": "<div class=\"ds-table\"><button type=\"button\" class=\"ds-flip\" aria-pressed=\"false\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 256 256\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"20\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><polyline points=\"176 104 224 104 224 56\"/><path d=\"M190.2 190.2a88 88 0 1 1 0-124.4L224 104\"/></svg>Read the back</button> <button type=\"button\" class=\"ds-flip\" aria-pressed=\"true\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 256 256\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"20\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><polyline points=\"176 104 224 104 224 56\"/><path d=\"M190.2 190.2a88 88 0 1 1 0-124.4L224 104\"/></svg>Turn back over</button></div>",
+      "css": ":host{--table:#24479f;--table-deep:#1a3786;--table-ink:#f3f5fb;--table-ink-soft:#d3dcf2;--focus-ring:#f2a541;--card:#f4f5f0;--card-ink:#1b2233;--card-ink-soft:#4a5268;--card-rule:#c9cedb;--airmail-red:#d6392f;--airmail-blue:#2346a0;--accent:var(--airmail-red);--accent-ink:#ffffff;--shadow:0 22px 44px -18px rgba(8,18,48,0.7),0 4px 12px -4px rgba(8,18,48,0.45);--radius:6px;--ease-out:cubic-bezier(0.16,1,0.3,1);--font-display:'Bungee','Arial Black',sans-serif;--font-hand:'Reenie Beanie','Segoe Print',cursive;--font-body:'Bricolage Grotesque Variable','Segoe UI',system-ui,sans-serif;} .ds-table{background:linear-gradient(180deg,var(--table),var(--table-deep));padding:24px;display:flex;gap:16px;flex-wrap:wrap;} .ds-flip{display:inline-flex;align-items:center;gap:.5em;min-height:44px;padding:10px 18px;border:0;border-radius:999px;background:var(--accent);color:var(--accent-ink);font-family:var(--font-body);font-size:1rem;font-weight:700;white-space:nowrap;cursor:pointer;transition:transform 160ms var(--ease-out),filter 160ms var(--ease-out);} .ds-flip svg{transition:transform 600ms var(--ease-out);} .ds-flip[aria-pressed='true'] svg{transform:rotate(180deg);} .ds-flip:hover{filter:brightness(1.08);} .ds-flip:active{transform:translateY(1px) scale(.98);} .ds-flip:focus-visible{outline:3px solid var(--focus-ring);outline-offset:3px;}"
+    },
+    {
+      "name": "Flip Button (night)",
+      "kind": "button",
+      "refersTo": "button-flip-night",
+      "description": "Dark-scheme tuning: lifted red with navy text on the night table.",
+      "html": "<div class=\"ds-table-night\"><button type=\"button\" class=\"ds-flip-night\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 256 256\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"20\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><polyline points=\"176 104 224 104 224 56\"/><path d=\"M190.2 190.2a88 88 0 1 1 0-124.4L224 104\"/></svg>Read the back</button></div>",
+      "css": ":host{--table:#24479f;--table-deep:#1a3786;--table-ink:#f3f5fb;--table-ink-soft:#d3dcf2;--focus-ring:#f2a541;--card:#f4f5f0;--card-ink:#1b2233;--card-ink-soft:#4a5268;--card-rule:#c9cedb;--airmail-red:#d6392f;--airmail-blue:#2346a0;--accent:var(--airmail-red);--accent-ink:#ffffff;--shadow:0 22px 44px -18px rgba(8,18,48,0.7),0 4px 12px -4px rgba(8,18,48,0.45);--radius:6px;--ease-out:cubic-bezier(0.16,1,0.3,1);--font-display:'Bungee','Arial Black',sans-serif;--font-hand:'Reenie Beanie','Segoe Print',cursive;--font-body:'Bricolage Grotesque Variable','Segoe UI',system-ui,sans-serif;} .ds-table-night{background:linear-gradient(180deg,#111f40,#0c1731);padding:24px;} .ds-flip-night{display:inline-flex;align-items:center;gap:.5em;min-height:44px;padding:10px 18px;border:0;border-radius:999px;background:#ef5b4f;color:#111f40;font-family:var(--font-body);font-size:1rem;font-weight:700;cursor:pointer;transition:transform 160ms var(--ease-out),filter 160ms var(--ease-out);} .ds-flip-night:hover{filter:brightness(1.08);} .ds-flip-night:active{transform:translateY(1px) scale(.98);} .ds-flip-night:focus-visible{outline:3px solid var(--focus-ring);outline-offset:3px;}"
+    },
+    {
+      "name": "Postcard Front",
+      "kind": "card",
+      "refersTo": "postcard-front",
+      "description": "Card stock with a 10px mat, flat scene art, and large scene-filled Bungee letters with a card-ink extrusion.",
+      "html": "<div class=\"ds-table\"><div class=\"ds-front\"><div class=\"ds-scene\"></div><p class=\"ds-greet\"><span class=\"ds-script\">Greetings from</span><span class=\"ds-letters\" data-text=\"FUJI\">FUJI</span></p></div></div>",
+      "css": ":host{--table:#24479f;--table-deep:#1a3786;--table-ink:#f3f5fb;--table-ink-soft:#d3dcf2;--focus-ring:#f2a541;--card:#f4f5f0;--card-ink:#1b2233;--card-ink-soft:#4a5268;--card-rule:#c9cedb;--airmail-red:#d6392f;--airmail-blue:#2346a0;--accent:var(--airmail-red);--accent-ink:#ffffff;--shadow:0 22px 44px -18px rgba(8,18,48,0.7),0 4px 12px -4px rgba(8,18,48,0.45);--radius:6px;--ease-out:cubic-bezier(0.16,1,0.3,1);--font-display:'Bungee','Arial Black',sans-serif;--font-hand:'Reenie Beanie','Segoe Print',cursive;--font-body:'Bricolage Grotesque Variable','Segoe UI',system-ui,sans-serif;} .ds-table{background:linear-gradient(180deg,var(--table),var(--table-deep));padding:32px;} .ds-front{position:relative;container-type:inline-size;width:360px;aspect-ratio:3/2;border:10px solid var(--card);border-radius:var(--radius);background:var(--card);box-shadow:var(--shadow);overflow:hidden;transform:rotate(-1.6deg);transition:transform 500ms var(--ease-out);} .ds-front:hover{transform:rotate(0) translateY(-4px);} .ds-front::after{content:'';position:absolute;inset:0;background-image:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .1 0 0 0 0 .12 0 0 0 0 .2 0 0 0 .7 -.18'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\");mix-blend-mode:multiply;opacity:.55;pointer-events:none;} .ds-scene{position:absolute;inset:0;border-radius:2px;background:linear-gradient(#a6d3e8 0 30%,#bfe0ef 30% 62%,#1d5e52 62% 68%,#83bfd9 68%);} .ds-greet{position:absolute;top:5cqi;left:5cqi;margin:0;display:flex;flex-direction:column;align-items:flex-start;} .ds-script{font-family:var(--font-hand);font-size:max(1.5rem,7cqi);line-height:1;color:var(--card-ink);transform:rotate(-4deg);transform-origin:left bottom;} .ds-letters{position:relative;isolation:isolate;padding:0 .08em .08em 0;font-family:var(--font-display);font-size:25cqi;line-height:.92;letter-spacing:.01em;color:transparent;-webkit-text-fill-color:transparent;-webkit-text-stroke:.028em #fff;} .ds-letters::before,.ds-letters::after{content:attr(data-text);position:absolute;inset:0;padding:inherit;} .ds-letters::after{z-index:-1;background:linear-gradient(#2b54b8 0 55%,#f6f7f4 55%);-webkit-background-clip:text;background-clip:text;-webkit-text-stroke:0;} .ds-letters::before{z-index:-2;-webkit-text-fill-color:var(--card-ink);-webkit-text-stroke:.07em var(--card-ink);text-shadow:.015em .015em 0 var(--card-ink),.03em .03em 0 var(--card-ink),.045em .045em 0 var(--card-ink),.06em .06em 0 var(--card-ink),.075em .075em 0 var(--card-ink);}"
+    },
+    {
+      "name": "Postcard Back",
+      "kind": "card",
+      "refersTo": "postcard-back",
+      "description": "Airmail chevron edge, printed POST CARD label, handwritten message, divider, perforated stamp and ruled address block with the Maps link.",
+      "html": "<div class=\"ds-table\"><div class=\"ds-back\"><p class=\"ds-label\">Post card</p><p class=\"ds-msg\">Mount Fuji stands 3,776 metres tall. Wish you were here!</p><div class=\"ds-div\"></div><div class=\"ds-stamp-area\"><div class=\"ds-stamp\"><span>JAPAN</span></div></div><div class=\"ds-addr\"><p class=\"ds-line\">To everyone back home</p><p class=\"ds-line\">Mount Fuji, Japan</p><a class=\"ds-line ds-maps\" href=\"#\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 256 256\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M128 16a88.1 88.1 0 0 0-88 88c0 75.3 80 132.2 83.4 134.6a8 8 0 0 0 9.2 0C136 236.2 216 179.3 216 104a88.1 88.1 0 0 0-88-88Zm0 56a32 32 0 1 1-32 32 32 32 0 0 1 32-32Z\"/></svg>Find it on Google Maps</a></div></div></div>",
+      "css": ":host{--table:#24479f;--table-deep:#1a3786;--table-ink:#f3f5fb;--table-ink-soft:#d3dcf2;--focus-ring:#f2a541;--card:#f4f5f0;--card-ink:#1b2233;--card-ink-soft:#4a5268;--card-rule:#c9cedb;--airmail-red:#d6392f;--airmail-blue:#2346a0;--accent:var(--airmail-red);--accent-ink:#ffffff;--shadow:0 22px 44px -18px rgba(8,18,48,0.7),0 4px 12px -4px rgba(8,18,48,0.45);--radius:6px;--ease-out:cubic-bezier(0.16,1,0.3,1);--font-display:'Bungee','Arial Black',sans-serif;--font-hand:'Reenie Beanie','Segoe Print',cursive;--font-body:'Bricolage Grotesque Variable','Segoe UI',system-ui,sans-serif;} .ds-table{background:linear-gradient(180deg,var(--table),var(--table-deep));padding:32px;} .ds-back{position:relative;container-type:inline-size;width:520px;aspect-ratio:3/2;display:grid;grid-template-columns:1.15fr 1px 1fr;grid-template-rows:auto 1fr auto;grid-template-areas:'label label label' 'msg div stamp' 'msg div addr';column-gap:4cqi;padding:4.5cqi 5cqi 4cqi;border-radius:var(--radius);background:var(--card);color:var(--card-ink);box-shadow:var(--shadow);overflow:hidden;} .ds-back::before{content:'';position:absolute;inset:0;border-radius:var(--radius);padding:1.4cqi;background:repeating-linear-gradient(-45deg,var(--airmail-red) 0 14px,var(--card) 14px 20px,var(--airmail-blue) 20px 34px,var(--card) 34px 40px);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0);pointer-events:none;} .ds-label{grid-area:label;margin:0 0 1.5cqi;color:var(--card-ink-soft);font-family:var(--font-body);font-size:max(.6875rem,1.9cqi);font-weight:700;letter-spacing:.35em;text-align:center;text-transform:uppercase;} .ds-msg{grid-area:msg;align-self:center;margin:0;font-family:var(--font-hand);font-size:max(1.375rem,4.1cqi);line-height:1.08;transform:rotate(-1deg);} .ds-div{grid-area:div;background:var(--card-rule);} .ds-stamp-area{grid-area:stamp;display:flex;justify-content:flex-end;} .ds-stamp{position:relative;display:flex;align-items:flex-end;justify-content:center;width:15cqi;min-width:72px;aspect-ratio:4/5;padding:1.6cqi;background:#e2522f;color:#fff;font-family:var(--font-display);font-size:max(.5rem,1.6cqi);transform:rotate(3deg);-webkit-mask:radial-gradient(circle at 50% 50%,transparent 3px,#000 3.5px) -5px -5px/10px 10px round,linear-gradient(#000 0 0) 5px 5px/calc(100% - 10px) calc(100% - 10px) no-repeat;mask:radial-gradient(circle at 50% 50%,transparent 3px,#000 3.5px) -5px -5px/10px 10px round,linear-gradient(#000 0 0) 5px 5px/calc(100% - 10px) calc(100% - 10px) no-repeat;} .ds-stamp::after{content:'';position:absolute;inset:7px;border:1.5px solid currentColor;opacity:.7;} .ds-addr{grid-area:addr;display:grid;padding-top:2cqi;} .ds-line{display:flex;align-items:center;gap:.35em;min-height:2.4em;margin:0;border-bottom:1px solid var(--card-rule);font-family:var(--font-hand);font-size:max(1.25rem,3.4cqi);line-height:1.1;color:inherit;} .ds-maps{color:var(--airmail-blue);font-family:var(--font-body);font-size:max(.875rem,2.1cqi);font-weight:600;text-decoration:none;} .ds-maps svg{color:var(--airmail-red);} .ds-maps:hover{text-decoration:underline;} .ds-maps:focus-visible{outline:3px solid var(--focus-ring);outline-offset:3px;}"
+    },
+    {
+      "name": "Trip Caption",
+      "kind": "custom",
+      "refersTo": "title",
+      "description": "Place title, country and dates, and the Flip button, lying on the table beside or under its card.",
+      "html": "<div class=\"ds-table\"><div class=\"ds-cap\"><div><h2 class=\"ds-title\">Mount Fuji</h2><p class=\"ds-meta\">Japan, 12–24 Jan 2021</p></div><button type=\"button\" class=\"ds-flip\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 256 256\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"20\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><polyline points=\"176 104 224 104 224 56\"/><path d=\"M190.2 190.2a88 88 0 1 1 0-124.4L224 104\"/></svg>Read the back</button></div></div>",
+      "css": ":host{--table:#24479f;--table-deep:#1a3786;--table-ink:#f3f5fb;--table-ink-soft:#d3dcf2;--focus-ring:#f2a541;--card:#f4f5f0;--card-ink:#1b2233;--card-ink-soft:#4a5268;--card-rule:#c9cedb;--airmail-red:#d6392f;--airmail-blue:#2346a0;--accent:var(--airmail-red);--accent-ink:#ffffff;--shadow:0 22px 44px -18px rgba(8,18,48,0.7),0 4px 12px -4px rgba(8,18,48,0.45);--radius:6px;--ease-out:cubic-bezier(0.16,1,0.3,1);--font-display:'Bungee','Arial Black',sans-serif;--font-hand:'Reenie Beanie','Segoe Print',cursive;--font-body:'Bricolage Grotesque Variable','Segoe UI',system-ui,sans-serif;} .ds-table{background:linear-gradient(180deg,var(--table),var(--table-deep));padding:24px;color:var(--table-ink);font-family:var(--font-body);} .ds-cap{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px 24px;} .ds-title{margin:0;font-size:clamp(1.375rem,1.1rem + 1vw,1.75rem);font-weight:700;line-height:1.15;letter-spacing:-.02em;} .ds-meta{margin:4px 0 0;color:var(--table-ink-soft);font-size:1.0625rem;font-variant-numeric:tabular-nums;} .ds-flip{display:inline-flex;align-items:center;gap:.5em;min-height:44px;padding:10px 18px;border:0;border-radius:999px;background:var(--accent);color:var(--accent-ink);font:inherit;font-size:1rem;font-weight:700;cursor:pointer;transition:filter 160ms var(--ease-out);} .ds-flip:hover{filter:brightness(1.08);} .ds-flip:focus-visible{outline:3px solid var(--focus-ring);outline-offset:3px;}"
+    },
+    {
+      "name": "Masthead",
+      "kind": "nav",
+      "refersTo": "display",
+      "description": "Wordmark with the accent globe, the Bungee display line, and the soft intro line.",
+      "html": "<div class=\"ds-table\"><p class=\"ds-mark\"><svg width=\"1.5em\" height=\"1.5em\" viewBox=\"0 0 256 256\" fill=\"currentColor\" aria-hidden=\"true\"><circle cx=\"128\" cy=\"128\" r=\"104\"/></svg>my travel journal.</p><h1 class=\"ds-display\">Four trips, sent home as postcards.</h1><p class=\"ds-intro\">Japan, Australia and two stops closer to home in Nigeria.</p></div>",
+      "css": ":host{--table:#24479f;--table-deep:#1a3786;--table-ink:#f3f5fb;--table-ink-soft:#d3dcf2;--focus-ring:#f2a541;--card:#f4f5f0;--card-ink:#1b2233;--card-ink-soft:#4a5268;--card-rule:#c9cedb;--airmail-red:#d6392f;--airmail-blue:#2346a0;--accent:var(--airmail-red);--accent-ink:#ffffff;--shadow:0 22px 44px -18px rgba(8,18,48,0.7),0 4px 12px -4px rgba(8,18,48,0.45);--radius:6px;--ease-out:cubic-bezier(0.16,1,0.3,1);--font-display:'Bungee','Arial Black',sans-serif;--font-hand:'Reenie Beanie','Segoe Print',cursive;--font-body:'Bricolage Grotesque Variable','Segoe UI',system-ui,sans-serif;} .ds-table{background:linear-gradient(180deg,var(--table),var(--table-deep));padding:24px 40px;color:var(--table-ink);font-family:var(--font-body);} .ds-mark{display:inline-flex;align-items:center;gap:.4em;margin:0;font-weight:700;font-size:1.125rem;letter-spacing:-.01em;} .ds-mark svg{color:var(--accent);} .ds-display{max-width:16ch;margin:28px 0 10px;font-family:var(--font-display);font-weight:400;font-size:clamp(1.875rem,1.2rem + 3.6vw,4.25rem);line-height:1.02;letter-spacing:-.01em;text-transform:uppercase;text-wrap:balance;} .ds-intro{max-width:52ch;margin:0;color:var(--table-ink-soft);font-size:1.0625rem;line-height:1.55;}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Postcards on the Airmail Table",
+    "overview": "**Creative North Star: \"Postcards on the Airmail Table\"**\n\nEvery trip is a physical postcard sent home, dropped onto a deep airmail-blue table. The page is the table; the only objects on it are card-stock postcards, their captions and one red control per card. Fronts are large-letter \"Greetings from\" cards over flat lithograph-style scenes in saturated inks; backs are real postcard backs with an airmail chevron edge, a perforated stamp, a cancelling postmark, a handwritten note and a ruled address block.\n\nDensity is low and object-led. Cards are big (full width on phones, 64% of the page on wide screens), tilted a degree or two as if dropped, and on wide screens they overlap into a loose stack with each caption lying on the table beside its card. Texture comes from the material: paper grain (feTurbulence noise, multiplied) over both faces; the table itself carries only a quiet vertical gradient, never glass, glow or pattern.\n\nThe table stays blue in both colour schemes. Light and dark only change the depth of the blue, the table ink and the accent tuning; the card stock and its inks never change.",
+    "keyCharacteristics": [
+      "Deep airmail-blue table in both schemes (`color-scheme: dark` throughout).",
+      "Card-stock postcards with grain, 6px corners and a soft cast shadow.",
+      "Three voices: Bungee for printed display, Bricolage Grotesque for the UI, Reenie Beanie for anything written by hand.",
+      "Airmail red is the one control colour; airmail red and blue together only as the chevron edge.",
+      "A 3D rotateY flip on a real `aria-pressed` button; a crossfade under reduced motion."
+    ],
+    "rules": [
+      {
+        "name": "The Blue Table Rule",
+        "body": "The table is airmail blue in both schemes. Dark mode deepens the blue; it never turns the page white or grey.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Red Control Rule",
+        "body": "Airmail red fills controls and marks (button, pin, globe). Paired with airmail blue it appears only as the chevron edge of a card back.",
+        "section": "colors"
+      },
+      {
+        "name": "The Pen Belongs to the Card Rule",
+        "body": "Reenie Beanie appears only as writing on a postcard (greeting script, message, address). Nothing on the table is handwritten.",
+        "section": "typography"
+      },
+      {
+        "name": "The Container Type Rule",
+        "body": "Everything on a card is sized in `cqi` against the card's width, with a rem floor, so a card reads the same at any size.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Shadow Rule",
+        "body": "Only postcards cast shadows. Buttons, captions and the masthead sit flat on the table.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep the table airmail blue in both schemes and let only the blue deepen for dark mode.",
+      "Do put every new object on the table as card stock with the card drop shadow and grain, at 6px corners.",
+      "Do size anything printed or written on a card in `cqi` with a rem floor.",
+      "Do keep airmail red for controls and marks, with marigold as the focus ring.",
+      "Do ship a reduced-motion alternative for any card motion (crossfade, no rotation).",
+      "Do keep art as authored flat SVG in the scene inks, with its provenance in the file."
+    ],
+    "donts": [
+      "Don't handwrite anything on the table; Reenie Beanie is for writing on cards.",
+      "Don't add shadows to buttons, captions or the table; the stacked letter extrusion belongs to the greeting letters only.",
+      "Don't set small letterspaced caps above headings on the table; tracked caps are printed postal matter (the \"POST CARD\" label, the postmark ring).",
+      "Don't use the red and blue airmail stripes anywhere but a card back's edge.",
+      "Don't load fonts or images from external hosts."
+    ]
+  }
+}

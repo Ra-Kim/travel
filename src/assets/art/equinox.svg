@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" role="img">
+  <title>A hotel swimming pool on a sunny day, with a striped parasol and a float ring</title>
+  <desc>Provenance: original vector illustration authored for this project, an impression of a stay at Equinox Hotels. Not a photograph.</desc>
+  <rect width="600" height="400" fill="#a9dcf0"/>
+  <circle cx="548" cy="74" r="44" fill="#f2a541"/>
+  <rect x="236" y="130" width="300" height="130" fill="#f3d9b1"/>
+  <rect x="236" y="130" width="300" height="12" fill="#e2522f"/>
+  <g fill="#2b54b8">
+    <rect x="254" y="152" width="34" height="22"/><rect x="306" y="152" width="34" height="22"/><rect x="358" y="152" width="34" height="22"/><rect x="410" y="152" width="34" height="22"/><rect x="462" y="152" width="34" height="22"/><rect x="254" y="190" width="34" height="22"/><rect x="306" y="190" width="34" height="22"/><rect x="358" y="190" width="34" height="22"/><rect x="410" y="190" width="34" height="22"/><rect x="462" y="190" width="34" height="22"/><rect x="254" y="228" width="34" height="22"/><rect x="306" y="228" width="34" height="22"/><rect x="358" y="228" width="34" height="22"/><rect x="410" y="228" width="34" height="22"/><rect x="462" y="228" width="34" height="22"/>
+  </g>
+  <g stroke="#1b2233" stroke-width="3"><path d="M248 182 H514"/><path d="M248 220 H514"/></g>
+  <path d="M150 300 Q158 236 136 186" fill="none" stroke="#7a4b2a" stroke-width="8" stroke-linecap="round"/>
+  <g fill="#1f8f7a">
+    <path d="M136 186 Q96 168 70 192 Q106 178 136 194 Z"/>
+    <path d="M136 186 Q120 150 88 150 Q120 164 134 192 Z"/>
+    <path d="M136 186 Q156 150 190 148 Q160 164 140 192 Z"/>
+    <path d="M136 186 Q178 172 202 198 Q170 182 138 194 Z"/>
+  </g>
+  <rect y="258" width="600" height="142" fill="#f3f4ef"/>
+  <g stroke="#d9dde3" stroke-width="2"><path d="M0 280 H600"/><path d="M100 258 V290"/><path d="M220 258 V290"/><path d="M340 258 V290"/><path d="M460 258 V290"/></g>
+  <rect x="24" y="290" width="552" height="100" fill="#34b3c9"/>
+  <rect x="24" y="290" width="552" height="8" fill="#2a93a6"/>
+  <g fill="none" stroke="#f6f7f4" stroke-width="3" stroke-linecap="round" opacity=".75">
+    <path d="M60 322 q14 -8 28 0 t28 0"/><path d="M200 350 q14 -8 28 0 t28 0"/><path d="M380 316 q14 -8 28 0 t28 0"/><path d="M470 364 q14 -8 28 0 t28 0"/><path d="M100 372 q14 -8 28 0 t28 0"/>
+  </g>
+  <circle cx="320" cy="346" r="22" fill="none" stroke="#f6f7f4" stroke-width="12"/>
+  <circle cx="320" cy="346" r="22" fill="none" stroke="#e2522f" stroke-width="12" stroke-dasharray="17.3 17.3"/>
+  <path d="M470 272 V190" stroke="#1b2233" stroke-width="4"/>
+  <path d="M400 206 Q470 150 540 206 Z" fill="#f6f7f4"/>
+  <path d="M400 206 Q424 176 446 166 L456 206 Z M484 206 L494 166 Q516 176 540 206 Z" fill="#e2522f"/>
+  <path d="M360 272 L420 262 L436 272 Z" fill="#e2522f"/>
+  <path d="M420 262 L430 244" stroke="#e2522f" stroke-width="6" stroke-linecap="round"/>
+  <g stroke="#1b2233" stroke-width="3"><path d="M366 272 V280"/><path d="M430 272 V280"/></g>
+</svg>
