@@ -9,7 +9,7 @@ export default function Postmark(props) {
     return (
         <svg className="postmark" viewBox="0 0 160 100" aria-hidden="true">
             <defs>
-                <path id={pathId} d="M22 50 A28 28 0 0 1 78 50" />
+                <path id={pathId} d="M17 50 A33 33 0 0 1 83 50" />
             </defs>
             <circle cx="50" cy="50" r="40" />
             <circle cx="50" cy="50" r="30" />

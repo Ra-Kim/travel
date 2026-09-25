@@ -25,7 +25,7 @@ const data = [
         art: fujiArt,
         photo: null,
         focus: "12%",
-        stamp: { art: "mountain", color: "#e2522f", ink: "#ffffff" },
+        stamp: { art: "mountain", color: "#c23a22", ink: "#ffffff" },
         message:
             "Mount Fuji stands 3,776 metres tall, the highest mountain in Japan and the single most popular sight in the country, for Japanese and foreign visitors alike. Wish you were here!",
     },

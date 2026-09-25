@@ -130,7 +130,7 @@ components:
 
 Every trip is a physical postcard sent home, dropped onto a deep airmail-blue table. The page is the table; the only objects on it are card-stock postcards, their captions and one red control per card. Fronts are large-letter "Greetings from" cards over flat lithograph-style scenes in saturated inks; backs are real postcard backs with an airmail chevron edge, a perforated stamp, a cancelling postmark, a handwritten note and a ruled address block.
 
-Density is low and object-led. Cards are big (full width on phones, 64% of the page on wide screens), tilted a degree or two as if dropped, and on wide screens they overlap into a loose stack with each caption lying on the table beside its card. Texture comes from the material: paper grain (feTurbulence noise, multiplied) over both faces, never from gradients or glass on the table.
+Density is low and object-led. Cards are big (full width on phones, 64% of the page on wide screens), tilted a degree or two as if dropped, and on wide screens they overlap into a loose stack with each caption lying on the table beside its card. Texture comes from the material: paper grain (feTurbulence noise, multiplied) over both faces; the table itself carries only a quiet vertical gradient, never glass, glow or pattern.
 
 The table stays blue in both colour schemes. Light and dark only change the depth of the blue, the table ink and the accent tuning; the card stock and its inks never change.
 
