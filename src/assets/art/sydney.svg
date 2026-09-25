@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" role="img">
+  <title>Sydney Opera House sails on the harbour at sunset, with the Harbour Bridge behind</title>
+  <desc>Provenance: original vector illustration authored for this project. Not a photograph.</desc>
+  <rect width="600" height="400" fill="#f6b58f"/>
+  <rect width="600" height="150" fill="#ef8f73"/>
+  <rect width="600" height="70" fill="#e5735f"/>
+  <circle cx="470" cy="214" r="58" fill="#f2d06b"/>
+  <g fill="none" stroke="#1b2233" stroke-linecap="round">
+    <path d="M392 236 Q496 116 600 236" stroke-width="9"/>
+    <path d="M392 236 Q496 140 600 236" stroke-width="3"/>
+    <path d="M362 236 H610" stroke-width="6"/>
+    <g stroke-width="2">
+      <path d="M430 236 V190"/><path d="M460 236 V168"/><path d="M496 236 V160"/><path d="M532 236 V168"/><path d="M562 236 V190"/>
+    </g>
+  </g>
+  <rect x="374" y="202" width="24" height="46" fill="#1b2233"/>
+  <rect y="248" width="600" height="152" fill="#2b54b8"/>
+  <g stroke="#5a7fd6" stroke-width="3" stroke-linecap="round">
+    <path d="M30 330 H100"/><path d="M150 362 H260"/><path d="M420 318 H500"/><path d="M470 376 H580"/><path d="M20 388 H90"/><path d="M300 390 H380"/>
+  </g>
+  <path d="M84 276 H372 L362 300 H96 Z" fill="#c96f53"/>
+  <rect x="96" y="298" width="266" height="6" fill="#a4553e"/>
+  <g fill="#f6f7f4" stroke="#cfd5de" stroke-width="2" stroke-linejoin="round">
+    <path d="M200 278 Q214 188 280 158 L292 278 Z"/>
+    <path d="M150 278 Q162 198 222 166 L236 278 Z"/>
+    <path d="M110 278 Q118 214 168 190 L182 278 Z"/>
+    <path d="M296 278 Q306 234 346 220 L354 278 Z"/>
+    <path d="M262 278 Q272 228 312 210 L322 278 Z"/>
+  </g>
+  <g stroke="#cfd5de" stroke-width="2" fill="none">
+    <path d="M280 158 L244 278"/><path d="M222 166 L196 278"/><path d="M168 190 L148 278"/><path d="M312 210 L292 278"/>
+  </g>
+  <path d="M410 336 H508 L494 352 H422 Z" fill="#1f8f7a"/>
+  <rect x="430" y="322" width="54" height="14" fill="#f2a541"/>
+  <rect x="446" y="312" width="22" height="10" fill="#f6f7f4"/>
+  <g fill="none" stroke="#1b2233" stroke-width="2.5" stroke-linecap="round">
+    <path d="M96 96 l8 6 l8 -6"/><path d="M130 80 l6 5 l6 -5"/>
+  </g>
+</svg>
