@@ -210,7 +210,7 @@ a {
     .trip-caption {
         position: absolute;
         top: 16%;
-        width: calc(56.25% - 64px);
+        width: calc(56.25% - 44px);
         margin: 0;
         flex-direction: column;
         align-items: flex-start;
@@ -218,12 +218,17 @@ a {
         gap: 20px;
     }
 
+    /* Each caption hugs its own card's outer edge, clear of the card above */
     .trip:nth-child(odd) .trip-caption {
-        left: calc(100% + 64px);
+        top: 16%;
+        left: calc(100% + 44px);
     }
 
     .trip:nth-child(even) .trip-caption {
-        right: calc(100% + 64px);
+        top: 42%;
+        right: calc(100% + 44px);
+        align-items: flex-end;
+        text-align: right;
     }
 
     .trip-title {
