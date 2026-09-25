@@ -5,11 +5,12 @@
     --font-hand: "Reenie Beanie", "Segoe Print", cursive;
     --font-body: "Bricolage Grotesque Variable", "Segoe UI", system-ui, sans-serif;
 
-    /* The table the postcards are laid out on: airmail envelope blue */
-    --table: #d3def0;
-    --table-deep: #c2d1ea;
-    --table-ink: #14254a;
-    --table-ink-soft: #33466f;
+    /* The table the postcards are laid out on: deep airmail blue */
+    --table: #24479f;
+    --table-deep: #1a3786;
+    --table-ink: #f3f5fb;
+    --table-ink-soft: #d3dcf2;
+    --focus-ring: #f2a541;
 
     /* The postcards themselves */
     --card: #f4f5f0;
@@ -23,11 +24,11 @@
     --accent: var(--airmail-red);
     --accent-ink: #ffffff;
 
-    --shadow: 0 18px 40px -18px rgba(20, 37, 74, 0.55), 0 4px 10px -4px rgba(20, 37, 74, 0.3);
+    --shadow: 0 22px 44px -18px rgba(8, 18, 48, 0.7), 0 4px 12px -4px rgba(8, 18, 48, 0.45);
     --radius: 6px;
     --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
 
-    color-scheme: light;
+    color-scheme: dark;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -35,11 +36,10 @@
         --table: #111f40;
         --table-deep: #0c1731;
         --table-ink: #eef1f8;
-        --table-ink-soft: #b4c0da;
+        --table-ink-soft: #c3cde4;
         --shadow: 0 22px 46px -18px rgba(0, 0, 0, 0.75), 0 4px 12px -4px rgba(0, 0, 0, 0.5);
         --accent: #ef5b4f;
         --accent-ink: #111f40;
-        color-scheme: dark;
     }
 }
 
@@ -75,14 +75,14 @@ a {
 }
 
 :focus-visible {
-    outline: 3px solid var(--accent);
+    outline: 3px solid var(--focus-ring);
     outline-offset: 3px;
     border-radius: 2px;
 }
 
 .page-width {
     width: 100%;
-    max-width: 1080px;
+    max-width: 1180px;
     margin: 0 auto;
     padding: 0 16px;
 }
@@ -116,20 +116,20 @@ a {
 
 .intro-title {
     max-width: 16ch;
-    margin: 40px 0 12px;
+    margin: 28px 0 10px;
     font-family: var(--font-display);
     font-weight: 400;
-    font-size: clamp(2.25rem, 1.4rem + 4vw, 4.5rem);
+    font-size: clamp(1.875rem, 1.2rem + 3.6vw, 4.25rem);
     line-height: 1.02;
     letter-spacing: -0.01em;
     text-wrap: balance;
 }
 
 .intro-text {
-    max-width: 40ch;
+    max-width: 52ch;
     margin: 0;
     color: var(--table-ink-soft);
-    font-size: 1.125rem;
+    font-size: 1.0625rem;
 }
 
 @media (min-width: 768px) {
@@ -138,7 +138,7 @@ a {
     }
 
     .intro-title {
-        margin-top: 56px;
+        margin-top: 36px;
     }
 }
 
@@ -146,8 +146,8 @@ a {
 
 .trips {
     display: grid;
-    gap: 72px;
-    padding-top: 48px;
+    gap: 64px;
+    padding-top: 28px;
     padding-bottom: 96px;
 }
 
@@ -168,8 +168,66 @@ a {
 
 @media (min-width: 768px) {
     .trips {
-        gap: 104px;
-        padding-top: 64px;
+        gap: 88px;
+        padding-top: 40px;
+    }
+}
+
+/* 3. Wide screens: the postcards overlap like a stack dropped on a table,
+   with each card's caption lying beside it on the table */
+@media (min-width: 1024px) {
+    .trips {
+        gap: 0;
+        padding-top: 36px;
+        padding-bottom: 120px;
+    }
+
+    .trip {
+        position: relative;
+        width: 64%;
+        max-width: none;
+    }
+
+    .trip + .trip {
+        margin-top: -88px;
+    }
+
+    .trip:nth-child(3) {
+        margin-left: 6%;
+        --tilt: -2.4deg;
+    }
+
+    .trip:nth-child(4) {
+        margin-right: 4%;
+        --tilt: 2deg;
+    }
+
+    .trip:hover,
+    .trip.is-open {
+        z-index: 5;
+    }
+
+    .trip-caption {
+        position: absolute;
+        top: 16%;
+        width: calc(56.25% - 64px);
+        margin: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    .trip:nth-child(odd) .trip-caption {
+        left: calc(100% + 64px);
+    }
+
+    .trip:nth-child(even) .trip-caption {
+        right: calc(100% + 64px);
+    }
+
+    .trip-title {
+        font-size: 2rem;
     }
 }
 
@@ -212,6 +270,18 @@ a {
     backface-visibility: hidden;
 }
 
+/* Paper tooth and ink grain, printed over both faces */
+.postcard-face::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .1 0 0 0 0 .12 0 0 0 0 .2 0 0 0 .7 -.18'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    mix-blend-mode: multiply;
+    opacity: 0.55;
+    pointer-events: none;
+}
+
 /* Front: illustration or photo, with large "Greetings from" letters */
 
 .postcard-front {
@@ -239,7 +309,7 @@ a {
 }
 
 .greeting-script {
-    margin-bottom: -0.1em;
+    margin-bottom: 0.05em;
     padding-left: 0.1em;
     color: var(--card-ink);
     font-family: var(--font-hand);
@@ -250,15 +320,50 @@ a {
 }
 
 .greeting-letters {
+    position: relative;
+    isolation: isolate;
     max-width: 100%;
-    color: #f2a541;
+    padding: 0 0.08em 0.08em 0;
     font-family: var(--font-display);
-    line-height: 0.95;
+    line-height: 0.92;
     letter-spacing: 0.01em;
     text-transform: uppercase;
-    -webkit-text-stroke: 0.035em var(--card-ink);
-    paint-order: stroke fill;
-    text-shadow: 0.06em 0.06em 0 var(--card-ink);
+    /* The span's own glyphs only draw the white outline, on top */
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.028em #ffffff;
+}
+
+.greeting-letters::before,
+.greeting-letters::after {
+    content: attr(data-text);
+    position: absolute;
+    inset: 0;
+    padding: inherit;
+}
+
+/* The face of each letter, filled with the card's own scene */
+.greeting-letters::after {
+    z-index: -1;
+    background: var(--letter-fill, none) center / cover, #f2a541;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0;
+}
+
+/* The extruded side, behind the face */
+.greeting-letters::before {
+    z-index: -2;
+    color: var(--card-ink);
+    -webkit-text-fill-color: var(--card-ink);
+    -webkit-text-stroke: 0.07em var(--card-ink);
+    text-shadow:
+        0.015em 0.015em 0 var(--card-ink),
+        0.03em 0.03em 0 var(--card-ink),
+        0.045em 0.045em 0 var(--card-ink),
+        0.06em 0.06em 0 var(--card-ink),
+        0.075em 0.075em 0 var(--card-ink);
 }
 
 /* Back: message on the left, stamp and address on the right */
@@ -345,7 +450,7 @@ a {
     aspect-ratio: 4 / 5;
     padding: 1.6cqi;
     background: var(--stamp);
-    color: #ffffff;
+    color: var(--stamp-ink, #ffffff);
     transform: rotate(3deg);
     /* Perforated edge */
     -webkit-mask: radial-gradient(circle at 50% 50%, transparent 3px, #000 3.5px) -5px -5px / 10px 10px round,
@@ -358,11 +463,13 @@ a {
     content: "";
     position: absolute;
     inset: 7px;
-    border: 1.5px solid rgba(255, 255, 255, 0.7);
+    border: 1.5px solid currentColor;
+    opacity: 0.7;
 }
 
-.stamp-icon {
-    font-size: max(1.75rem, 6.5cqi);
+.stamp-art {
+    width: 72%;
+    height: auto;
 }
 
 .stamp-country {
@@ -440,8 +547,38 @@ a {
 
 /* Tall postcards on phones, so the back has room to breathe */
 @media (max-width: 600px) {
+    .masthead {
+        padding-top: 14px;
+    }
+
+    .intro-title {
+        margin-top: 20px;
+    }
+
+    .intro-text {
+        line-height: 1.4;
+    }
+
+    .trips {
+        padding-top: 18px;
+    }
+
     .postcard-inner {
-        aspect-ratio: 4 / 5;
+        aspect-ratio: 5 / 6;
+    }
+
+    .postcard-art {
+        object-position: var(--focus, 50%) 50%;
+    }
+
+    .trip-caption {
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-top: 14px;
+    }
+
+    .flip-button {
+        padding: 10px 14px;
     }
 
     .postcard-back {
@@ -452,7 +589,7 @@ a {
             "stamp"
             "msg"
             "address";
-        padding: 7cqi 7cqi 6cqi;
+        padding: 6cqi 7cqi 5cqi;
     }
 
     .back-divider {
@@ -460,7 +597,7 @@ a {
     }
 
     .back-stamp-area {
-        min-height: 26cqi;
+        min-height: 23cqi;
     }
 
     .stamp {
@@ -475,12 +612,13 @@ a {
 
     .back-message {
         align-self: start;
-        margin-top: 4cqi;
-        font-size: 6.6cqi;
+        margin-top: 3cqi;
+        font-size: 6cqi;
     }
 
     .address-line {
-        font-size: 5.6cqi;
+        min-height: 2.1em;
+        font-size: 5.2cqi;
     }
 
     .maps-link {

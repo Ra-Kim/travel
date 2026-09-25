@@ -14,7 +14,6 @@ export default function HeadSection(props) {
                 </h1>
                 <p className="intro-text">
                     Japan, Australia and two stops closer to home in Nigeria.
-                    Turn a card over to read the back.
                 </p>
             </div>
         </header>

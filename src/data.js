@@ -11,7 +11,8 @@ import equinoxArt from "./assets/art/equinox.svg";
 //   photo     - optional. To use your own picture, put it in src/assets/photos,
 //               import it at the top of this file and set photo: myPhoto.
 //               If the photo ever fails to load, the card falls back to the art.
-//   stamp     - which icon and colour the stamp on the back uses
+//   focus     - which part of the art to keep when the card is cropped tall on phones
+//   stamp     - the stamp on the back: its picture, colour and lettering colour
 const data = [
     {
         id: 1,
@@ -23,9 +24,10 @@ const data = [
         mapQuery: "Mount Fuji, Japan",
         art: fujiArt,
         photo: null,
-        stamp: { icon: "mountains", color: "#e2522f" },
+        focus: "12%",
+        stamp: { art: "mountain", color: "#e2522f", ink: "#ffffff" },
         message:
-            "Mount Fuji stands 3,776 metres tall, the highest peak in Japan and the country's favourite sight for locals and visitors alike. In January the snow reaches a long way down the slopes. Wish you were here!",
+            "Mount Fuji stands 3,776 metres tall, the highest mountain in Japan and the single most popular sight in the country, for Japanese and foreign visitors alike. Wish you were here!",
     },
     {
         id: 2,
@@ -37,7 +39,8 @@ const data = [
         mapQuery: "Sydney Opera House, Sydney, Australia",
         art: sydneyArt,
         photo: null,
-        stamp: { icon: "theatre", color: "#2b54b8" },
+        focus: "35%",
+        stamp: { art: "sails", color: "#2b54b8", ink: "#ffffff" },
         message:
             "The Opera House sits right on the edge of Sydney Harbour: a performing arts centre with several venues under those famous sails. It is one of the best-known buildings of the 20th century. See you soon!",
     },
@@ -51,9 +54,10 @@ const data = [
         mapQuery: "Equinox Hotels, Nigeria",
         art: equinoxArt,
         photo: null,
-        stamp: { icon: "pool", color: "#1f8f7a" },
+        focus: "30%",
+        stamp: { art: "pool", color: "#1a7a68", ink: "#ffffff" },
         message:
-            "I promised myself a swim, and I kept that promise. Two quiet days of pool, sunshine and sleep, because sometimes the whole point of a trip is finally getting some rest.",
+            "I made myself a promise: get in that pool. I was tired, I needed rest, and I was not going to run myself into the ground. Thanks for understanding.",
     },
     {
         id: 4,
@@ -65,9 +69,10 @@ const data = [
         mapQuery: "Pleasure Park, Port Harcourt, Nigeria",
         art: pleasureParkArt,
         photo: null,
-        stamp: { icon: "park", color: "#f2a541" },
+        focus: "40%",
+        stamp: { art: "fountain", color: "#f2a541", ink: "#1b2233" },
         message:
-            "One of the standout spots in the Garden City. The grounds are beautiful and well kept, and the prices are fair, so you get a proper day out without a big bill at the end.",
+            "One of the standout spots in Port Harcourt, the Garden City. It is famous for its glamorous grounds and a reputation for being easy on the pocket, so it feels like a great day out for less.",
     },
 ];
 

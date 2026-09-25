@@ -1,34 +1,20 @@
 import React from "react";
-import {
-    ArrowsClockwise,
-    MapPin,
-    MaskHappy,
-    Mountains,
-    SwimmingPool,
-    Tree,
-} from "@phosphor-icons/react";
+import { ArrowsClockwise, MapPin } from "@phosphor-icons/react";
 import Postmark from "./Postmark";
+import StampArt from "./StampArt";
 import { formatDateRange, mapsUrl } from "./utils";
 
-const STAMP_ICONS = {
-    mountains: Mountains,
-    theatre: MaskHappy,
-    pool: SwimmingPool,
-    park: Tree,
-};
-
-// Sizes the big front letters by the longest word, so long names like
-// "Port Harcourt" wrap onto two lines instead of shrinking to nothing.
+// Sizes the big front letters so the longest word spans most of the card.
+// Long names like "Port Harcourt" wrap onto two lines instead of shrinking.
 function greetingSize(text) {
     const longest = Math.max(...text.split(" ").map(word => word.length));
-    return `${Math.min(17, 70 / longest)}cqi`;
+    return `${Math.min(25, 84 / (longest * 0.8))}cqi`;
 }
 
 export default function Card(props) {
     const [flipped, setFlipped] = React.useState(false);
     const [photoFailed, setPhotoFailed] = React.useState(false);
 
-    const StampIcon = STAMP_ICONS[props.stamp.icon] || Mountains;
     const dates = formatDateRange(props.start, props.end);
     const usePhoto = props.photo && !photoFailed;
 
@@ -37,7 +23,11 @@ export default function Card(props) {
     }
 
     return (
-        <article className="trip" aria-labelledby={`trip-${props.id}-title`}>
+        <article
+            className={`trip${flipped ? " is-open" : ""}`}
+            aria-labelledby={`trip-${props.id}-title`}
+            style={{ "--focus": props.focus || "50%" }}
+        >
             <div className={`postcard${flipped ? " is-flipped" : ""}`} onClick={toggle}>
                 <div className="postcard-inner">
                     <div className="postcard-face postcard-front" inert={flipped ? "" : undefined}>
@@ -51,7 +41,11 @@ export default function Card(props) {
                             <span className="greeting-script">Greetings from</span>
                             <span
                                 className="greeting-letters"
-                                style={{ fontSize: greetingSize(props.greeting) }}
+                                data-text={props.greeting}
+                                style={{
+                                    fontSize: greetingSize(props.greeting),
+                                    "--letter-fill": `url(${usePhoto ? props.photo : props.art})`,
+                                }}
                             >
                                 {props.greeting}
                             </span>
@@ -63,8 +57,11 @@ export default function Card(props) {
                         <p className="back-message">{props.message}</p>
                         <div className="back-divider" aria-hidden="true" />
                         <div className="back-stamp-area">
-                            <div className="stamp" style={{ "--stamp": props.stamp.color }}>
-                                <StampIcon className="stamp-icon" weight="bold" aria-hidden="true" />
+                            <div
+                                className="stamp"
+                                style={{ "--stamp": props.stamp.color, "--stamp-ink": props.stamp.ink }}
+                            >
+                                <StampArt name={props.stamp.art} />
                                 <span className="stamp-country">{props.country}</span>
                             </div>
                             <Postmark country={props.country} date={props.start} />
